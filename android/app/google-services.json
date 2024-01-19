@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "768501477878",
+    "project_id": "feedback-project-a40ba",
+    "storage_bucket": "feedback-project-a40ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768501477878:android:39074af3e5e1910fd757d7",
+        "android_client_info": {
+          "package_name": "com.example.musicpad"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8FZkHKfdh4Q_q7FGLl1vm0zcTG7LL5t4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
