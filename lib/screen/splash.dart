@@ -36,22 +36,6 @@ class _SplashState extends State<Splash> {
       body: Stack(
         clipBehavior: Clip.antiAliasWithSaveLayer,
         children: [
-          // Container(
-          //   clipBehavior: Clip.antiAlias,
-          //   width: MediaQuery.sizeOf(context).width,
-          //   height: MediaQuery.sizeOf(context).height,
-          //   decoration: BoxDecoration(
-          //       color: const Color.fromARGB(255, 17, 17, 17).withOpacity(0.5),
-          //       image: const DecorationImage(
-          //           image: AssetImage("images/back.jpg"), fit: BoxFit.cover),
-          //       borderRadius: const BorderRadius.only(
-          //         topRight: Radius.circular(200),
-          //         bottomLeft: Radius.circular(200),
-          //       ),
-          //       boxShadow: const [
-          //         BoxShadow(blurRadius: 4, spreadRadius: 6, color: Colors.white)
-          //       ]),
-          // ),
           Padding(
             padding: const EdgeInsets.only(top: 200),
             child: Column(
