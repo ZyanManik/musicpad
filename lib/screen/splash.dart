@@ -1,5 +1,5 @@
 //import 'package:adaptive_theme/src/adaptive_theme_mode.dart';
-import 'dart:html';
+//import 'dart:html';
 
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
