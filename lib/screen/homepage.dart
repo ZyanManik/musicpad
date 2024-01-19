@@ -4,6 +4,7 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:musicpad/page/musicrecord.dart';
 import 'package:musicpad/page/settings.dart';
 import 'package:musicpad/screen/musicblogs.dart';
+import 'package:musicpad/screen/splash.dart';
 
 class MyApp extends StatelessWidget {
   final AdaptiveThemeMode? savedThemeMode;
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         title: 'Adaptive Theme Demo',
         theme: theme,
         darkTheme: darkTheme,
-        home: const HomePage(),
+        home: const Splash(),
       ),
     );
   }
