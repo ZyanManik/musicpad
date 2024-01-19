@@ -3,6 +3,7 @@
 
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:musicpad/screen/homepage.dart';
 
 class Splash extends StatefulWidget {
@@ -68,6 +69,14 @@ class _SplashState extends State<Splash> {
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
                       fontFamily: "greatvibes"),
+                ),
+                const Padding(
+                  padding: EdgeInsets.only(top: 300),
+                  child: SpinKitSpinningLines(
+                    size: 60,
+                    color: Colors.white,
+                    duration: Duration(milliseconds: 1000),
+                  ),
                 )
               ],
             ),

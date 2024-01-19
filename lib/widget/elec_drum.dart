@@ -1,9 +1,9 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
-// ignore: must_be_immutable
+// ignore: must_be_immutable, camel_case_types
 class Elec_drum extends StatefulWidget {
-  Elec_drum({super.key});
+  const Elec_drum({super.key});
 
   @override
   State<Elec_drum> createState() => _Elec_drumState();

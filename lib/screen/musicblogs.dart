@@ -99,7 +99,7 @@ class _CarousalState extends State<Musicblogs> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Tabla(),
+                            builder: (context) => const Tabla(),
                           ));
                     },
                   ),

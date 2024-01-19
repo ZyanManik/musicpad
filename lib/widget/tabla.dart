@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class Tabla extends StatefulWidget {
-  Tabla({super.key});
+  const Tabla({super.key});
 
   @override
   State<Tabla> createState() => _TablaState();
