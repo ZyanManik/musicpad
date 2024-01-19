@@ -61,7 +61,7 @@ class _Elec_drumState extends State<Elec_drum> {
         title: const Row(
           children: [
             Text(
-              'Elec_drum',
+              'Electric',
               style: TextStyle(
                 color: Colors.white,
               ),
@@ -74,7 +74,7 @@ class _Elec_drumState extends State<Elec_drum> {
             ),
           ],
         ),
-        backgroundColor: const Color.fromARGB(255, 182, 181, 181),
+        backgroundColor: const Color.fromARGB(255, 35, 60, 80),
         leading: InkWell(
           child: const Icon(Icons.arrow_back_ios),
           onTap: () {

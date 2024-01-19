@@ -23,15 +23,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -50,20 +44,37 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBirsZQmueRyb3l4nUEuY-EHy6veZkihr4',
-    appId: '1:768501477878:web:44f7ca3e0f713442d757d7',
-    messagingSenderId: '768501477878',
-    projectId: 'feedback-project-a40ba',
-    authDomain: 'feedback-project-a40ba.firebaseapp.com',
-    storageBucket: 'feedback-project-a40ba.appspot.com',
-    measurementId: 'G-NVT49L49CG',
+    apiKey: 'AIzaSyABhzveUEF2tO6XZGC5F-5hAJ22Y_bER5s',
+    appId: '1:1088703444514:web:b83409e001bcda6ac93c7b',
+    messagingSenderId: '1088703444514',
+    projectId: 'music-pad-9dcc8',
+    authDomain: 'music-pad-9dcc8.firebaseapp.com',
+    storageBucket: 'music-pad-9dcc8.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyD8FZkHKfdh4Q_q7FGLl1vm0zcTG7LL5t4',
-    appId: '1:768501477878:android:39074af3e5e1910fd757d7',
-    messagingSenderId: '768501477878',
-    projectId: 'feedback-project-a40ba',
-    storageBucket: 'feedback-project-a40ba.appspot.com',
+    apiKey: 'AIzaSyC359scnmPNf1JwLIfFBtorLqf6v7BgNi4',
+    appId: '1:1088703444514:android:ea2c7150efa20609c93c7b',
+    messagingSenderId: '1088703444514',
+    projectId: 'music-pad-9dcc8',
+    storageBucket: 'music-pad-9dcc8.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyB7sOn-1IiHDXaBKc1UjrPK0u76PcLOZl0',
+    appId: '1:1088703444514:ios:4da2239ffbc90020c93c7b',
+    messagingSenderId: '1088703444514',
+    projectId: 'music-pad-9dcc8',
+    storageBucket: 'music-pad-9dcc8.appspot.com',
+    iosBundleId: 'com.example.musicpad',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyB7sOn-1IiHDXaBKc1UjrPK0u76PcLOZl0',
+    appId: '1:1088703444514:ios:63a22efaae7d325ac93c7b',
+    messagingSenderId: '1088703444514',
+    projectId: 'music-pad-9dcc8',
+    storageBucket: 'music-pad-9dcc8.appspot.com',
+    iosBundleId: 'com.example.musicpad.RunnerTests',
   );
 }

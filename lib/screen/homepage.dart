@@ -1,16 +1,24 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:musicpad/page/musicrecord.dart';
 import 'package:musicpad/page/settings.dart';
 import 'package:musicpad/screen/musicblogs.dart';
 import 'package:musicpad/screen/splash.dart';
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   final AdaptiveThemeMode? savedThemeMode;
 
   const MyApp({super.key, this.savedThemeMode});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  final _scaffoldkey = GlobalKey<ScaffoldMessengerState>();
+  
   @override
   Widget build(BuildContext context) {
     return AdaptiveTheme(
@@ -24,13 +32,15 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         colorSchemeSeed: Colors.blue,
       ),
-      initial: savedThemeMode ?? AdaptiveThemeMode.light,
+      initial: widget.savedThemeMode ?? AdaptiveThemeMode.light,
       builder: (theme, darkTheme) => MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Adaptive Theme Demo',
         theme: theme,
         darkTheme: darkTheme,
         home: const Splash(),
+        builder: EasyLoading.init(),
+        scaffoldMessengerKey: _scaffoldkey,
       ),
     );
   }
@@ -47,7 +57,7 @@ class _BottomNavigationBarExampleState extends State<HomePage> {
   int _selectedIndex = 0;
   static const List<Widget> _widgetOptions = <Widget>[
     Musicblogs(),
-    App(),
+    Musicrecord(),
     Settings()
   ];
 
